@@ -414,7 +414,6 @@ GROUP BY
 ORDER BY 
     total_revenue ASC;
 
-
 --38. Cho biết top 10 hóa đơn có khoảng cách từ order_date đến shipped_date là thấp nhất
 SELECT TOP 10
     order_id,
@@ -434,12 +433,9 @@ SELECT *
 FROM staffs
 ORDER BY staff_id DESC
 
-
 --41. Tạo hàm tính độ lệch giữa order_date đến shipped_date. Liệt kê orders và độ lệch này
 SELECT
       *,
 	  DATEDIFF(day,order_date,shipped_date) as between_date
 FROM 
       orders
-
---41. 
